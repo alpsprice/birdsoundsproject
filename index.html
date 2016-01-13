@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bird Sounds Project</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/vendor/modernizr.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+			<!--Alert and News Links UP Top-->
+			<div id="header-top" class="top-bar row">
+				<p id="alert" class="large-3 column">Don't Miss The Latest Bird News</p>
+				<ul id="top-news" class="large-9 column">
+					<li>|</li>
+					<li><a href="https://magazine.good.is/articles/national-audubon-society-mural-project-threatened-endangered-birds-street-art-new-york-city-gitler" target="_blank">NYC Bird Mural Project</a>
+					</li>
+					<li>|</li>
+					<li><a href="http://www.birdlife.org/pacific/news/critically-endangered-parrots-killed-rats-breeding-facility" target="_blank">Rats Kill Parrots</a></li>
+					<li>|</li>
+					<li><a href="http://www.taipeitimes.com/News/taiwan/archives/2016/01/12/2003637037" target="_blank">Rare Bird Rescued</a></li>
+					<li>|</li>
+					<li id="long"><a href="http://www.chattanoogan.com/2016/1/5/315505/Expansion-Of-Brazilian-Songbird.aspx" target="_blank">Pro-Songbird Brazil</a></li>
+				</ul>
+			</div>
+			<!--Logo and Top Navigation -->
+				<div id="header-mid" class="row">
+					<h1 id="logo" class="large-6 column">Welcome</h1>
+				
+				
+					<ul id="top-nav" class="tabs large-6 column">
+						<li><a href="#row-1">Play Game</a></li>
+						<li><a href="#fun-facts">Fun Facts</a></li>
+						<li><a href="#bottom">Sources &amp; Credits</a></li>
+					</ul>
+				
+				</div>
+				<!--Banner above the slider-->
+				<h3 id="header-bottom">Play My Bird Guessing Game</h3>
+			</header>
+			
+			<!--Slider-->
+			<div class="slider autoplay">
+			
+				<div id="slide1">
+					<img class="slide-img" src="img/bird_slide1.2.jpg" title="Philippine Eagle" alt="philippine eagle" />
+				</div>  
+				<div id="slide2">
+					<img class="slide-img" src="img/bird_slide2.jpg" title="Spoon-billed Sandpiper" alt="spoon-billed sandpiper" />
+				</div>
+				<div id="slide3">
+					<img class="slide-img" src="img/bird_slide3.jpg" title="Shoebill" alt="shoebill" />
+				</div>
+	
+			</div>
+			 <!--End Slider-->
+			<!--Game Instructions-->
+			<div id="game-header">
+				<h2>Click the Pics to Hear the Sounds and Guess the Bird</h2>
+			</div>
+			<!--Bird Game Start-->
+			
+			<!--Row 1-->
+			<div id="row-1" class="row">
+				<!--Bird Image-->
+				<a href="javascript:rowOneSound();"><img class="bird-img large-4  column" title="Click Here for the Sound" src="img/bird_q1.jpg" alt="A type of falcon" /></a>
+				<div class="clue-card  large-4 column">
+					<!--Clue Card-->
+					<h3>Clue Card</h3>
+					<ul>
+						<li>I hunt other birds</li>
+						<li>I also eat insects and bats</li>
+						<li>My eggs are white or reddish brown</li>
+						<li>I live in foothills or conifer woods</li>
+						<li><b>Click my pic to hear the sound I make</b></li>
+					</ul>
+				</div>
+				<!--Two-sided Card-->
+				<div class="answer-wrapper">
+					<div class="answer-card large-4 column">
+						<h3>Which Bird Am I?</h3>
+						<h5>Click and Hold <br />For the Answer</h5>
+					</div>
+					<div class="answerSideTwo">
+						<h3>A Merlin Falcon<br />Falco Columbarius</h3>
+					</div>
+				</div>
+			</div>
+			<!--Row 2-->
+			<div id="row-2" class="row">
+				<!--Bird Image-->
+				<a href="javascript:rowTwoSound();"><img class="bird-img large-4 column" title="Click Here for the Sound" src="img/birdqs2.jpg" alt="A type of duck" /></a>
+				<div class="clue-card large-4 column">
+					<!--Clue Card-->
+					<h3>Clue Card</h3>
+					<ul>
+						<li>I forage in water by submerging my head </li>
+						<li>My young leave the nest within a day</li>
+						<li>I live in marshes, swamps, city parks or lakes</li>
+						<li><b>Click my pic to hear the sound I make</b></li>
+					</ul>
+				</div>
+				<!--Two-sided Card-->
+				<div class="answer-wrapper">
+					<div class="answer-card large-4 column">
+						<h3>Which Bird Am I?</h3>
+						<h5>Click and Hold <br />For the Answer</h5>
+					</div>
+					<div class="answerSideTwo">
+						<h3>A Mallard Duck<br /> Anas Platyrhynchos</h3>
+					</div>
+				</div>
+			</div>
+			<!--Row 3-->
+			<div id="row-3" class="row">
+				<!--Bird Image-->
+				<a href="javascript:rowThreeSound();"><img class="bird-img large-4 column" title="Click Here for the Sound" src="img/bird_q3.jpg" alt="A type of dove" /></a>
+				<div class="clue-card large-4 column">
+					<!--Clue Card-->
+					<h3>Clue Card</h3>
+					<ul>
+						<li>I forage on the ground for seeds</li>
+						<li>I feed my offspring "pigeon milk"</li>
+						<li>I live in open woods, grasslands or on farms</li>
+						<li><b>Click my pic to hear the sound I make</b></li>
+					</ul>
+				</div>
+				<!--Two-sided Card-->
+				<div class="answer-wrapper">
+					<div class="answer-card large-4 column">
+						<h3>Which Bird Am I?</h3>
+						<h5>Click and Hold <br />For the Answer</h5>
+					</div>
+					<div class="answerSideTwo">
+						<h3>A Mourning Dove<br /> Zenaida Macroura</h3>
+					</div>
+				</div>
+			</div>
+			<!--Row 4-->
+			<div id="row-4" class="row">
+				<!--Bird Image-->
+				<a href="javascript:rowFourSound();"><img class="bird-img large-4 columns" title="Click Here for the Sound" src="img/bird_q4.jpg" alt="A type of owl" /></a>
+				<div class="clue-card large-4 column">
+					<!--Clue Card-->
+					<h3>Clue Card</h3>
+					<ul>
+						<li>I hunt mainly at night or at dusk</li>
+						<li>My eggs are a dull white color</li>
+						<li>I live in woodlots, forrests and the open country</li>
+						<li><b>Click my pic to hear the sound I make</b></li>
+					</ul>
+				</div>
+				<!--Two-sided Card-->
+				<div class="answer-wrapper">
+					<div class="answer-card large-4 column">
+						<h3>Which Bird Am I?</h3>
+						<h5>Click and Hold <br />For the Answer</h5>
+					</div>
+					<div class="answerSideTwo">
+						<h3>A Great Horned Owl<br /> Bubo Virginianus</h3>
+					</div>
+				</div>
+			</div>
+			<!--Row 5-->
+			<div id="row-5" class="row">
+				<!--Bird Image-->
+				<a href="javascript:rowFiveSound();"><img class="bird-img large-4 column" title="Click Here for the Sound" src="img/bird_q5.jpg" alt="A type of green bird" /></a>
+				<div class="clue-card large-4 column">
+					<!--Clue Card-->
+					<h3>Clue Card</h3>
+					<ul>
+						<li>I forage in shrubs or decidious trees for insects</li>
+						<li>My eggs are white with specks of brown/black</li>
+						<li>I live in aspen groves or decidious woods</li>
+						<li><b>Click my pic to hear the sound I make</b></li>
+					</ul>
+				</div>
+				<!--Two-sided Card-->
+				<div class="answer-wrapper">
+					<div class="answer-card large-4 column">
+						<h3>Which Bird Am I?</h3>
+						<h5>Click and Hold <br />For the Answer</h5>
+					</div>
+					<div class="answerSideTwo">
+						<h3>A Warbling Vireo<br /> Vireo Gilvus</h3>
+					</div>
+				</div>
+			</div>
+			<!--Row 6-->
+			<div id="row-6" class="row">
+				<!--Bird Image-->
+				<a href="javascript:rowSixSound();"><img class="bird-img large-4 column" title="Click Here for the Sound" src="img/bird_q6.jpg" alt="A type of blue bird" /></a>
+				<div class="clue-card large-4 column">
+					<!--Clue Card-->
+					<h3>Clue Card</h3>
+					<ul>
+						<li>I forage in trees or shrubs and harvest acorns</li>
+						<li>My eggs are green/blue with brown/gray spots</li>
+						<li>I live in oak, pine or beech tree woods</li>
+						<li><b>Click my pic to hear the sound I make</b></li>
+					</ul>
+				</div>
+				<!--Two-sided Card-->
+				<div class="answer-wrapper">
+					<div class="answer-card large-4 column">
+						<h3>Which Bird Am I?</h3>
+						<h5>Click and Hold <br />For the Answer</h5>
+					</div>
+					<div class="answerSideTwo">
+						<h3>A Bluejay<br /> Cyanocitia Cristata</h3>
+					</div>
+				</div>
+			</div>
+			
+			<!--Audio Files-->
+				  <audio id="rowOneSound" src="sounds/merlin_mm.wav" preload="auto"></audio>
+				  <audio id="rowTwoSound" src="sounds/mallard_duck_tp.wav" preload="auto"></audio>
+				  <audio id="rowThreeSound" src="sounds/dove_mk.wav" preload="auto"></audio>
+				  <audio id="rowFourSound" src="sounds/horned_owl_mk.wav" preload="auto"></audio>
+				  <audio id="rowFiveSound" src="sounds/warbling_vireo_mk.wav" preload="auto"></audio>
+				  <audio id="rowSixSound" src="sounds/bluejay_mk.wav" preload="auto"></audio>
+			<!--End Audio Files-->	  
+			
+			<!--End Bird Game-->
+			
+			<!--Fun Bird Facts Section-->
+			<div id="fun-facts">
+				<!--Title-->
+				<h2 class="fact-title">Fun Birding Facts:</h2>
+				<!--Map Title-->
+				<h3 id="bigYear" class="fact-title">Noah's Big Year Hot Spots - 2015</h3>
+				<div class="row">
+					<div class="large-6 column">
+						<!--Fact List Title-->
+						<h3>In the US:</h3>
+						<!--Fact List-->
+						<ul id="fact-list"><b>
+							<li>- People age 55+ have the highest birding participation rate at 30%</li>
+							<li></li>
+							<li>- Most birders are college graduates and 56% are female</li>
+							<li></li>
+							<li>- Of the top five states with the highest birding participation rates, three start with the letter "w": Wisconsin, West Virginia and Wyoming (the other two are Vermont and Alaska)</li>
+							<li></li>
+							<li>- One American bird-nerd, Oregonian Noah Strycker, beat the Big Year world record (the number of bird species seen by one person in one year) for 2015, by trekking across the globe to see 6,042 bird species</li></b>
+						</ul>
+					</div>
+					<!--Map-->
+					<div id="map" class="large-6 column">
+						<div class="mapSideA"><img src="img/world_map.png" alt="World map" /></div>
+						<div class="mapSideB">
+						<!--Map Blip Animations-->
+							<div id="blip-1" class="blips"></div>
+							<div id="blip-2" class="blips"></div>
+							<div id="blip-3" class="blips"></div>
+							<div id="blip-4" class="blips"></div>
+							<div id="blip-5" class="blips"></div>
+							<div id="blip-6" class="blips"></div>
+							<div id="blip-7" class="blips"></div>
+						</div>
+					
+					</div>
+					<a href="#header-top" id="back-to-top" class="button">Back to Top</a>
+				</div>
+			
+			</div>
+			<!--End Fun Bird Facts Section-->
+			
+			<!--Sources and Credits Section-->
+			<div id="bottom" class="row">
+				<h3>Sources &amp; Credits</h3>
+				<div class="large-5 column bottom">
+				
+					<!--Photo Credits-->
+					Photo Credits:<br />
+					
+					Background Photo - <a href="https://www.flickr.com/photos/7327719@N06/16870548622/" target="_blank">Vicki's Nature</a> via <a href="http://compfight.com" target="_blank">Compfight</a> <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">cc</a><br />
+					
+					<!--Slide Photos Credits-->
+					Endangered Philippine Eagle - <a href="https://c1.staticflickr.com/5/4060/4393600505_b37ecdf1d6.jpg" target="_blank">Staticflicker.com</a>
+					<br />
+					
+					Spoon-billed Sandpiper - <wbr><a href="https://upload.wikimedia.org/wikipedia/commons/9/96/Pectoral_Sandpiper3.jpg" target="_blank">Wikimedia.org/<wbr>wikipedia/commons</a><br />
+					
+					Endangered Shoebill - <wbr><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Balaeniceps_rex_-Ueno_Zoo,_Tokyo,_Japan_-upper_body-8a.jpg/1280px-Balaeniceps_rex_-Ueno_Zoo,_Tokyo,_Japan_-upper_body-8a.jpg" target="_blank">Wikimedia.org/<wbr>wikipedia/commons</a><br />
+					
+					<!--Game Photos Credits-->
+					Bird Question 1 Photo:<wbr><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Merlin_prey_fencepost_Cochrane_cropped.jpg/300px-Merlin_prey_fencepost_Cochrane_cropped.jpg" target="_blank">Wikimedia.org/<wbr>wikipedia/commons</a><br />
+					
+					Bird Question 2 Photo:<wbr><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mallard_Duck.JPG/640px-Mallard_Duck.JPG" target="_blank">Wikimedia.org/<wbr>wikipedia/commons</a><br />
+					
+					Bird Question 3 Photo:<wbr><a href="https://upload.wikimedia.org/wikipedia/commons/e/ec/Mourning_Dove_(Zenaida_macroura)_RWD.jpg" target="_blank">Wikimedia.org/<wbr>wikipedia/commons</a><br />
+					
+					Bird Question 4 Photo:<wbr><a href="https://upload.wikimedia.org/wikipedia/commons/e/ec/Mourning_Dove_(Zenaida_macroura)_RWD.jpg" target="_blank">Wikimedia.org/<wbr>wikipedia/commons</a><br />
+					
+					Bird Question 5 Photo:<wbr><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Warbling_Vireo_-_Sisters_-_Oregon_S4E7012_(19236790445).jpg/320px-Warbling_Vireo_-_Sisters_-_Oregon_S4E7012_(19236790445).jpg" target="_blank">Wikimedia.org/<wbr>wikipedia/commons</a><br />
+					
+					Bird Question 6 Photo:<wbr><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Blue_Jay_IMG_7928.jpg/1280px-Blue_Jay_IMG_7928.jpg" target="_blank">Wikimedia.org/<wbr>wikipedia/commons</a><br />
+				</div>
+				<div class="large-4 column bottom">
+				
+					<!--Sound Sources-->
+					Sound Sources:<br />
+					Merlin Falcon Sound: <a href="http://soundbible.com/1965-Merlin.html" target="_blank">Mark Mattingly </a>
+					<br />
+					
+					Mallard Duck Sound: <a href="http://soundbible.com/1197-Mallard-Duck-2.html" target="_blank">Tonly Phillips </a>
+					<br />
+					
+					Mourning Dove Sound: <a href="http://soundbible.com/1850-Dove.html" target="_blank">Mike Koenig </a>
+					<br />
+					
+					Great Horned Owl Sound: <a href="http://soundbible.com/1851-Horned-Owl.html" target="_blank">Mike Koenig </a> 
+					<br />
+					
+					Warbling Vireo Sound: <a href="http://soundbible.com/1846-Warbling-Vireo.html" target="_blank">Mike Koenig </a> 
+					<br />
+					
+					Bluejay Sound: <a href="http://soundbible.com/1842-Bluejay-Call.html" target="_blank">Mike Koenig </a> 
+					<br />
+					
+					<hr>
+					
+					<!--Bird Fact Sources-->
+					Bird Facts Source:<br />
+					<a href="http://www.audubon.org/birds" target="_blank">Audubon.org</a>
+					
+				</div>
+				<!--Website Author Info-->
+				<div id="author" class="large-3 column bottom">
+					Website By:<br />
+					<div id="profile">
+						<img id="author-pic" src="img/profile_pic2.jpg" alt="Picture of Marissa Richardson" />
+						<p>Marissa Richardson<br />Front End<br /> Web Developer<br /> By Freelance<br /> Or Contract</p>
+					</div>
+					<div id="emailme" class="button success">
+						<h6>Email Marissa at<br />mricha14(at)<wbr>gmail.com</h6>
+					</div>
+				
+				</div>
+				<div>&copy; 2016 Marissa Richardson</div>
+			</div>
+			
+			<!--Footer-->
+			<footer id="learn-more">
+				<h3>Birds of the World and Their Habitats Need Help - Protect Endangered Species Today</h3>
+				<a href="https://secure.audubon.org/site/Donation2?df_id=6960&6960.donation=form1&s_src=audubon-org_general_donation-bar" target="_blank"><button class="button round alert">Save Birds/Learn More</button></a>
+			</footer>
+			<!--End Footer-->
+		</div>
+		
+		<!--End Container-->
+		
+		<!--JavaScript Files-->
+		<script type="text/javascript" src="js/vendor/jquery.js"></script>
+		<script type="text/javascript" src="js/foundation.min.js"></script>
+		<script type="text/javascript" src="js/foundation/foundation.js"></script>
+		<script type="text/javascript" src="js/slick/slick.min.js"></script>
+		<script type="text/javascript" src="js/foundation/foundation.reveal.js"></script>
+		
+		<!--JavaScript Functions-->
+		<script type="text/javascript">
+			$(document).foundation();
+		</script>
+  
+		<script>
+			$(document).ready(function() {
+				$('.slider').slick({
+					dots: true
+				});
+			});
+			$('.autoplay').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 4000,
+				arrows: false,
+				dots: true
+			});
+
+		</script>
+		
+		<!--JS Audio Functions-->
+		<script type="text/javascript">
+			function rowOneSound () {
+				document.getElementById('rowOneSound').play();
+			}
+			function rowTwoSound() {
+				document.getElementById('rowTwoSound').play();
+			}
+			function rowThreeSound() {
+				document.getElementById('rowThreeSound').play();
+			}
+			function rowFourSound() {
+				document.getElementById('rowFourSound').play();
+			}
+			function rowFiveSound() {
+				document.getElementById('rowFiveSound').play();
+			}
+			function rowSixSound() {
+				document.getElementById('rowSixSound').play();
+			}
+		</script>  
+		<!--End JavaScript-->
+  
+	</body>
+</html>

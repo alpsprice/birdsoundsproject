@@ -1,0 +1,597 @@
+/*=============================
+Stylesheet: Bird Sounds Project
+By: Marissa Richardson
+Created: 01/07/16
+===============================*/
+
+/*=========
+Base Styles
+===========*/
+
+/*Background*/
+
+body {
+	background: url('../img/background-image6.jpg') repeat;
+}
+
+/*Center Content*/
+
+.container {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
+
+/*===========
+Header Styles
+=============*/
+
+/*Top news bar*/
+
+#header-top {
+	background: #424242;
+	color: #fff;
+	/*height: 35px;*/
+	height: 5%;
+	
+}
+#header-top p {
+	margin-top: 7px;
+	color: #3aa5b5;
+	display: inline;
+}
+#top-news {
+	margin-left: auto;
+	display: inline;
+	margin-top: 7px;
+}
+#top-news li {
+	margin-right: 20px;
+	opacity: 0.8;
+	display: inline;
+}
+
+/*Mid Header*/
+
+#header-mid {
+	background-color: rgba(31,31,31, 0.8);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	height: 150px;
+}
+#top-nav {
+	display: flex;
+	margin-left: 30%;
+}
+#top-nav li {
+	background: #ef5a3e;
+	margin-right: 20px;
+	border-radius: 5%;
+	padding: 5px;
+	font-weight: bold;
+	opacity: 0.95;
+	width: 100px;
+	height: 65px;
+}
+#top-nav li a,
+#top-news li a {
+	color: #fff;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+#logo {
+	border-radius: 5%;
+	margin-top: 25px;
+	margin-bottom: 40px;
+	margin-left: 4px;
+	color: white;
+	margin-left: 10%;
+}
+
+/*Header Bottom*/
+
+#header-bottom {
+	background-color: rgb(54, 27, 33);
+	padding-top: 10px;
+	padding-bottom: 7px;
+	margin-top: -.5px;
+	text-align:left;
+	color: #fff;
+	height: 45px;
+	margin-bottom: 0;
+	text-indent: 10%;
+}
+
+
+
+/*=========
+Slider Styles
+===========*/
+
+.slider {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.slide-img {
+	width: 100%;
+	height: 500px;
+}
+
+/* Slick Styles */
+
+.slick-prev:before, .slick-next:before {
+	color: #ef5a3e;
+	font-size: 30pt;
+}
+.slick-prev, .slick-next {
+	z-index: 1;
+}
+.slick-prev {
+	left: 30px;
+}
+.slick-next {
+	right: 50px;
+}
+.slick-dots {
+	bottom: 20px;
+	
+}
+.slick-dots li button:before {
+	font-size: 16px;
+	background: #efefef;
+	border-radius: 5%;
+}
+
+/*==============
+Grid Game Styles
+===============*/
+
+#game-header {
+	margin-top: -25px;
+	padding-top: 10px;
+	background-color: rgba(251, 250, 246, 0.8);
+
+}
+
+/*Rows*/
+
+.row {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: initial;
+	-webkit-perspecitive: 800px;
+}
+
+.bird-img {
+	background-color: rgba(251, 250, 246, 0.8);
+	margin-bottom: 5px;
+	border-radius: 5%;
+	height: 200px;
+}
+.column h3,
+.answer-card h5 {
+	color: #fff;
+}
+.clue-card,
+.answer-card {
+	
+	color: #fff;
+	height: 200px;
+	border-radius: 5%;
+}
+.clue-card {
+	background-color: rgba(54, 27, 33, 0.9);
+	
+}
+.answer-card {
+	background: #424242;
+	z-index: 100;
+	right: 0;
+	
+}
+.answer-card:active {
+	-webkit-transform: rotateY(180deg);
+}
+.answer-wrapper div {
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	
+}
+.answer-wrapper  {
+	position: relative;
+	transition: -webkit-transform 1s ease-in;
+	-webkit-transfrom-style: preserve-3d;
+	transform-origin: 50% 50%;
+}
+
+.answerSideTwo {
+	width: 33%;
+	height: 200px;
+	background-color: rgba(42,42,42, 0.8);
+	float: left;
+	margin-left: 67%;
+	border-radius: 5%;
+	margin-top: 0;
+	
+}
+.answerSideTwo h3 {
+	margin-top: 50px;
+	color: #fff;
+}
+
+/*==============
+Fun Facts Styles
+===============*/
+
+#fun-facts {
+	height: 410px;
+	background: #542733;
+	text-align: left;
+	margin-top: 10px;
+}
+.fact-title {
+	display: inline-block;
+}
+
+#fun-facts h2 ,
+#fun-facts h3{
+	color: #fff;
+	margin-left: 15%;
+}
+#fact-list {
+	color: #fff;
+}
+#map {
+	height: 275px;
+	position: relative;
+}
+
+/*Map Styles*/
+
+div.mapSideA,
+div.mapSideB {
+	position: absolute;
+}
+.mapSideA {
+	margin-right: 20px;
+}
+.mapSideA img {
+	border-radius: 5%;
+}
+#back-to-top {
+	margin-left: 35%;
+}
+
+/*Map Animations*/
+.blips {
+width: 40px;
+height: 40px;
+margin: 20px auto;
+background-color: #333;
+display: inline;
+padding: 5px;
+border-radius: 100%; 
+-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+0% { -webkit-transform: scale(0) }
+100% {
+-webkit-transform: scale(1.0);
+opacity: 0;
+}
+}
+
+@keyframes sk-scaleout {
+0% { 
+-webkit-transform: scale(0);
+transform: scale(0);
+} 100% {
+-webkit-transform: scale(1.0);
+transform: scale(1.0);
+opacity: 0;
+}
+}
+/*end animation*/
+
+/*Map Blip Styles*/
+
+#blip-1 {
+	background: purple;
+	position: relative;
+	left: 40px;
+	top: 55px;
+}
+#blip-2 {
+	background: deeppink;
+	position: relative;
+	left: 65px;
+	top: 110px;
+}
+#blip-3 {
+	background: lightseagreen;
+	position: relative;
+	left: 80px;
+	top: 130px;
+}
+#blip-4 {
+	background: green;
+	position: relative;
+	left: 255px;
+	top: 185px;
+}
+#blip-5 {
+	background: maroon;
+	position: relative;
+	left: 260px;
+	top: 140px;
+}
+#blip-6 {
+	background: blue;
+	position: relative;
+	left: 315px;
+	top: 75px;
+}
+#blip-7 {
+	background: red;
+	position: relative;
+	left: 385px;
+	top: 120px;
+}
+
+/*==============================
+Sources & Credits Section Styles
+===============================*/
+
+div#bottom {
+	background-color: rgba(31,31,31, 0.8);
+	height: 50%;
+	color: #fff;
+	margin-bottom: 75px;
+}
+#bottom h3 {
+	color: #fff;
+}
+#author {
+	height: 300px;
+	background-color: rgba(42,42,42, 0.8);
+}
+#profile {
+	height: 50%;
+	display: flex;
+}
+#profile p {
+	margin-left: auto;
+	margin-top: 20px;;
+}
+#author-pic {
+	border-radius: 5%;
+	height: 100%;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+#emailme {
+	margin-top: 25px;
+	height: 20%;
+	padding-top: 5px;
+}
+#emailme h6 {
+	color: #fff;
+}
+
+/*===========
+Footer Styles
+============*/
+
+footer {
+	height: 75px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	display: flex;
+	z-index: 1000;
+}
+footer h3 {
+	color: #fff;
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+footer button.button {
+	margin-left: auto;
+	margin-top: 7px;
+	margin-bottom: 2px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+#learn-more {
+	position: fixed;
+	bottom: 0;
+	width: 90%;
+}
+
+/*===============
+Media Queries
+================*/
+
+/*Fix top news bar and sources section */
+
+@media (max-width: 1253px) {
+	div ul#top-news {
+		display: block;
+		width: 100%;
+	}
+	div p#alert {
+		display: block;
+		margin-left: 40%;
+	}
+	div#bottom {
+		display: flex;
+		flex-direction: column;
+	}
+	div.bottom {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+/*Fix fun facts section and remove map and map title */
+
+@media (max-width: 1138px) {
+	h3#bigYear,
+	div#map {
+		display: none;
+	}
+	ul#fact-list,
+	a#back-to-top{
+		display: inline;
+	}
+	a#back-to-top {
+		margin-left: 200px;
+	}
+}
+/*Fix top navigation */
+
+@media (max-width: 1100px) {
+	ul#top-nav {
+		margin-left: 25%;
+	}
+}
+/*Break point fix for entire layout */
+
+@media (max-width: 1025px) {
+	div p#alert  {
+		margin-left: auto;
+	}
+	ul#top-nav,
+	h1#logo {
+		margin: auto;
+	}
+	div#header-mid {
+		display: block;
+		height: 70%;
+		text-align: center;
+	}
+	ul#top-nav {
+		margin-right: -30%;
+	}
+	h3#header-bottom {
+		text-align: center;
+	}
+	img.bird-img {
+		z-index: 200;
+	}
+	#row-1,
+	#row-2,
+	#row-3,
+	#row-4,
+	#row-5,
+	#row-6 {
+		display: flex;
+		flex-direction: column;
+	}
+	#row-2,
+	#row-3,
+	#row-4,
+	#row-5,
+	#row-6  {
+		margin-top: 205px;
+	}
+	.clue-card {
+		margin-bottom: 5px;
+	}
+	.answerSideTwo {
+		width: 100%;
+		margin: auto;
+	}
+	#fun-facts {
+		margin-top: 205px;
+	}
+	
+	a#back-to-top {
+		float: right;
+	}
+}
+
+/*Remove the last news source in top news bar */
+
+@media (max-width: 942px) {
+	ul li#long {
+		display: none;
+	}
+	
+}
+
+/*Adjust top navigation */
+
+@media (max-width: 900px) {
+	ul#top-nav {
+		display: block;
+		margin-left: 5%;
+		margin-right: -5%;
+	}
+	ul#top-nav li {
+		width: 90%;
+		height: 40px;
+		margin-bottom: 7px;
+	}
+}
+
+/*Remove top news bar, slider and footer header and adjust margins */
+
+@media (max-width: 756px) {
+	header div#header-top {
+		display: none;
+	}
+	div.slider {
+		display: none;
+	}
+	div#game-header {
+		margin: auto;
+	}
+	footer h3 {
+		display: none;
+	}
+	footer a {
+		margin: auto;
+	}
+	img#author-pic,
+	div#profile p {
+		margin: auto;
+	}
+}
+
+/*Fun facts section height fix */
+
+@media (max-width: 650px) {
+	div#fun-facts {
+		height: 30%;
+	}
+}
+
+/*Fix height for clue cards */
+
+@media (max-width: 475px) {
+	.clue-card {
+		height: 250px;
+	}
+}
+
+/*Fix author profile */
+
+@media (max-width: 375px) {
+	h3#header-bottom {
+		height: 70px;
+	}
+	img#author-pic {
+		display: none;
+	}
+	div#emailme {
+		width: 95%;
+		height: 95px;
+	}
+}
