@@ -585,6 +585,9 @@ Media Queries
 	div.bottom {
 		width: 100%;	
 	}
+	div.answer-wrapper {
+		z-index: 300;
+	}
 }
 
 /*Fix author profile */
