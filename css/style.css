@@ -594,4 +594,8 @@ Media Queries
 		width: 95%;
 		height: 95px;
 	}
+	div#copy {
+		width: 100%;	
+	}
+	}
 }
